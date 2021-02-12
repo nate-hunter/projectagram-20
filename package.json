@@ -34,12 +34,10 @@
     "validator": "^13.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "now-build": "react-scripts build",
-    "deploy": "npx now --target production"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
