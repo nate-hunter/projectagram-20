@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "/static/js/main.81b7d87e.chunk.js",
+    "main.js.map": "/static/js/main.81b7d87e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c1ff37ef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c1ff37ef.js.map",
+    "static/css/2.cbf4de94.chunk.css": "/static/css/2.cbf4de94.chunk.css",
+    "static/js/2.8c311e42.chunk.js": "/static/js/2.8c311e42.chunk.js",
+    "static/js/2.8c311e42.chunk.js.map": "/static/js/2.8c311e42.chunk.js.map",
+    "static/js/3.c8345db3.chunk.js": "/static/js/3.c8345db3.chunk.js",
+    "static/js/3.c8345db3.chunk.js.map": "/static/js/3.c8345db3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9e2058d77ff01bae3cef247eb70fe47b.js": "/precache-manifest.9e2058d77ff01bae3cef247eb70fe47b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.cbf4de94.chunk.css.map": "/static/css/2.cbf4de94.chunk.css.map",
+    "static/js/2.8c311e42.chunk.js.LICENSE.txt": "/static/js/2.8c311e42.chunk.js.LICENSE.txt",
+    "static/media/default-image-01.jpg": "/static/media/default-image-01.d8f7732d.jpg",
+    "static/media/default-image-02.jpg": "/static/media/default-image-02.06a585ca.jpg",
+    "static/media/default-image-03.png": "/static/media/default-image-03.35918565.png",
+    "static/media/facebook-icon-blue.svg": "/static/media/facebook-icon-blue.cbb9b56a.svg",
+    "static/media/icon-sheet-2.png": "/static/media/icon-sheet-2.a9a13771.png",
+    "static/media/icon-sheet.png": "/static/media/icon-sheet.3dfb71b4.png",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1ff37ef.js",
+    "static/css/2.cbf4de94.chunk.css",
+    "static/js/2.8c311e42.chunk.js",
+    "static/js/main.81b7d87e.chunk.js"
+  ]
+}
