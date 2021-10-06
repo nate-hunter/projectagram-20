@@ -1,6 +1,6 @@
 # Projectagram
 
-An instagram clone for rojects
+An instagram clone for projects
 
 
 ## COMMANDS:
