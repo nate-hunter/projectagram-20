@@ -1,5 +1,5 @@
-import { Avatar, Typography } from "@material-ui/core";
 import React from "react";
+import { Avatar, Typography } from "@material-ui/core";
 import Slider from "react-slick";
 import Slick from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -14,10 +14,16 @@ import { SUGGEST_USERS } from "../../graphql/queries";
 
 function FollowSuggestions({ hideHeader }) {
   const classes = useFollowSuggestionsStyles();
+  // const { followerIds, me } = React.useContext(UserContext);
+  // const variables = { limit: 20, followerIds, createdAt: me.created_at };
+  // const { data, loading } = useQuery(SUGGEST_USERS, { variables });
+  // console.log('follow suggestions data', '// me:', variables)
+  
+  //
   const { followerIds, me } = React.useContext(UserContext);
   const variables = { limit: 20, followerIds, createdAt: me.created_at };
   const { data, loading } = useQuery(SUGGEST_USERS, { variables });
-
+  console.log('follow suggestions data', data)
 
   return (
     <div className={classes.container}>

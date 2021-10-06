@@ -8,7 +8,7 @@ import App from "./App";
 import AuthProvider from './auth';
 import client from './graphql/client';
 
-
+ 
 class ErrorBoundary extends React.Component {
   state = { hasError: false };
 
@@ -46,4 +46,4 @@ ReactDOM.render(
     </ApolloProvider>
   </ErrorBoundary>,
   document.getElementById("root")
-);
+); 

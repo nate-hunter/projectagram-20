@@ -8,7 +8,7 @@ function ExploreSuggestions() {
   const classes = useExploreSuggestionsStyles();
 
   return (
-    <Hidden  xsDown>
+    <Hidden xsDown>
       <div className={classes.container}>
         <Typography
           color="textSecondary"

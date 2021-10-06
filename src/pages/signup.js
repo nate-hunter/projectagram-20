@@ -121,7 +121,7 @@ function SignUpPage() {
                 label="Email"
                 type="email"
                 margin="dense"
-                className={classes.textField}
+                className={classes.textField} 
               />
               <TextField
                 name="name"
@@ -185,7 +185,7 @@ function SignUpPage() {
                 autoComplete="new-password"
               />
               <Button
-              disabled={!formState.isValid || formState.isSubmitting }
+                disabled={!formState.isValid || formState.isSubmitting }
                 variant="contained"
                 fullWidth 
                 color="primary"

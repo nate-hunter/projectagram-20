@@ -115,8 +115,8 @@ export const SUGGEST_USERS = gql`
 
 // posts with the most likes and comments at the top, newest to oldest where the posts are not from the users they are following
 export const EXPLORE_POSTS = gql`
-    query explorePosts($followingIds: [uuid!]!) {
-        posts(order_by: {created_at: desc, likes_aggregate: {count: desc}, comments_aggregate: {count: desc}}, where: {id: {_nin: $followingIds}}) {
+    query explorePosts($feedIds: [uuid!]!) {
+        posts(order_by: {created_at: desc, likes_aggregate: {count: desc}, comments_aggregate: {count: desc}}, where: {user_id: {_nin: $feedIds}}) {
             id
             media
             likes_aggregate {

@@ -13,13 +13,13 @@ const provider = new firebase.auth.GoogleAuthProvider();
 
 // Find these options in your Firebase console
 firebase.initializeApp({
-    apiKey: "AIzaSyBcVjTwOV0YJdrlbVrv5alW-or-LLyFcRk",
-    authDomain: "projectagram-de240.firebaseapp.com",
-    databaseURL: "https://projectagram-de240-default-rtdb.firebaseio.com",
-    projectId: "projectagram-de240",
-    storageBucket: "projectagram-de240.appspot.com",
-    messagingSenderId: "367061320802",
-    appId: "1:367061320802:web:170d0a280ee545aa137d3b"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
+    databaseURL: process.env.REACT_APP_databaseURL
 });
 
 export const AuthContext = createContext();
@@ -110,10 +110,6 @@ const AuthProvider = ({ children }) => {
     await authState.user.updateEmail(email);
   }
 
-  async function updateEmail(email) {
-    await authState.user.updateEmail(email);
-  }
-
   if (authState.status === "loading") {
     return null;
   } else {
@@ -134,4 +130,4 @@ const AuthProvider = ({ children }) => {
   }
 }
 
-export default AuthProvider;
+export default AuthProvider;  

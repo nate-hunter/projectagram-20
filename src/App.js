@@ -24,6 +24,7 @@ function App() {
   const userId = isAuth ? authState.user.uid : null;
   const variables = { userId };
   const { data, loading } = useSubscription(ME, { variables }); 
+  console.log('data?', data, loading)
   const history = useHistory();
   const location = useLocation();
   const prevLocation = React.useRef(location);
@@ -49,6 +50,7 @@ function App() {
 
   const isModalOpen = modal && prevLocation.current !== location;
   const me = isAuth && data ? data.users[0] : null;
+  console.log('me?', data)
   const currentUserId = me.id;
   const followingIds = me.following.map(({ user }) => user.id)
   const followerIds = me.followers.map(({ user }) => user.id)
